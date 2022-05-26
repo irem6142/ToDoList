@@ -10,6 +10,9 @@ ekle.addEventListener('click', function() {
     toDoContainer.appendChild(paragraph)
     paragraph.innerHTML = inputText.value
     inputText.value = ""
+if (inputText.value == "" && paragraph.innerHTML == "") {//Boş olarak ekleye tıklayınca 
+        alert("Hiçbir şey yazmadınız")
+    }
 
 
 
